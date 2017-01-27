@@ -11,5 +11,8 @@
 
 
 (define (sum-up-numbers-simple L)
-      )
-         
+ (cond
+   ((null? L) 0) ;if list is null return 0
+   
+  )
+ )       

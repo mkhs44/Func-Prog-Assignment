@@ -31,5 +31,8 @@
 
 
 (define (min-above-min L1 L2) ;defines min-above-min function
+  (cond
+    ((null? L1) #f) ;if first list is null, return false
+    )
   )
 

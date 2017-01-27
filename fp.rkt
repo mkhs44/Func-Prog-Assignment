@@ -13,7 +13,8 @@
 (define (sum-up-numbers-simple L)
  (cond
    ((null? L) 0) ;if list is null return 0
-   ((list? (car L) (sum-up-numbers-simple (cdr L)))); if first item is a list ignore, and recurse the rest of the list
-   ((number? (car L) (+ (sum-up-numbers-simple(cdr L))))); if first item is a number, concatenate number; then recurse remaining list
-  )
+   ((list? (car L)) (sum-up-numbers-simple (cdr L))); if first item is a list ignore, and recurse the rest of the list
+   ((number? (car L)) (+ (car L) (sum-up-numbers-simple(cdr L)))); if first item is a number, concatenate number; then recurse remaining list
+   
  )       
+)

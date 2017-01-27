@@ -23,7 +23,7 @@
 (define (sum-up-numbers-general L)
  (cond
    ((null? L) 0) ;if list is null return 0
-   ((list? (car L)) (sum-up-numbers-general (cdr L)))
+   ((list? (car L)) (sum-up-numbers-general (car L))) ;focus on item in inner list
    ((number? (car L)) (+ (car L) (sum-up-numbers-general(cdr L))))
    (else (sum-up-numbers-simple (cdr L)))
   )

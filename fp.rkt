@@ -1,0 +1,8 @@
+(define (reverse-general L)
+ 
+ )
+
+
+
+  
+  

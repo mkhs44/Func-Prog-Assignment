@@ -25,7 +25,7 @@
    ((null? L) 0) ;if list is null return 0
    ((list? (car L)) (+ (sum-up-numbers-general (car L)) (sum-up-numbers-general (cdr L)))) ;concatenates number, then recurse rest of list 
    ((number? (car L)) (+ (car L) (sum-up-numbers-general(cdr L)))) ;if first item is a number, concatenate number; then recurse remaining list
-   (else (sum-up-numbers-simple (cdr L))) ;if else, exclude first item and recurse
+   (else (sum-up-numbers-general (cdr L))) ;if else, exclude first item and recurse
   )
  )       
 

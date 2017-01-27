@@ -27,5 +27,9 @@
    ((number? (car L)) (+ (car L) (sum-up-numbers-general(cdr L)))) ;if first item is a number, concatenate number; then recurse remaining list
    (else (sum-up-numbers-general (cdr L))) ;if else, exclude first item and recurse
   )
- )       
+ )
+
+
+(define (min-above-min L1 L2) ;defines min-above-min function
+  )
 

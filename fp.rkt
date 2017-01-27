@@ -10,6 +10,6 @@
  )
 
 
-
-
-  
+(define (sum-up-numbers-simple L)
+      )
+         
